@@ -26,4 +26,4 @@ $('<style>'+ styles +'</style>').appendTo(document.head);
 // remember forum tab
 var mainUrl = $('#index ul.nav-tabs li.active a[href^="http://4programmers.net/Forum"]').attr('href') || localStorage.getItem('mainUrl');
 localStorage.setItem('mainUrl', mainUrl);
-$('a[href="http://4programmers.net/Forum"]').attr('href', mainUrl);
+$('a:not(ul.nav-tabs)[href="http://4programmers.net/Forum"]').attr('href', mainUrl);

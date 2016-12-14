@@ -6,7 +6,6 @@
 // @grant       none
 // ==/UserScript==
 
-// remove sidebar
 $("#sidebar").css('display', 'none');
 $("#index").css('paddingRight', '0');
 
@@ -16,3 +15,6 @@ $("header").css('position', 'relative');
 
 // remove red badge from Praca
 $(".badge.new:contains(Nowość)").css('display', 'none')
+
+// throw away box-job-offers
+$("#box-job-offers").css('display', 'none');

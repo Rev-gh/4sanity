@@ -6,6 +6,7 @@
 // @grant       none
 // ==/UserScript==
 
+$("#box-job-offers").css('display', 'none');
 $("#sidebar").css('display', 'none');
 $("#index").css('paddingRight', '0');
 $("body").css('padding-top', '0');

@@ -22,3 +22,8 @@ $("#box-job-offers").css('display', 'none');
 // remove breadcrumb
 var styles = "#breadcrumb-fixed { display: none !important; }";
 $('<style>'+ styles +'</style>').appendTo(document.head);
+
+// remember forum tab
+var mainUrl = $('#index ul.nav-tabs li.active a[href^="http://4programmers.net/Forum"]').attr('href') || localStorage.getItem('mainUrl');
+localStorage.setItem('mainUrl', mainUrl);
+$('a[href="http://4programmers.net/Forum"]').attr('href', mainUrl);
